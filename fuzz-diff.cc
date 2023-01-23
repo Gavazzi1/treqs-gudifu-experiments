@@ -258,6 +258,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t data_len) {
   }
   
   // Get full filename by appending counter
+  printf("counter: %lu\n", counter);
   char filepath[256];
   if (snprintf(filepath, 256, "%s/%lu", getenv(envvar), counter) >= 256){
     fprintf(stderr, "BUFSIZE of 256 was too small. Aborting\n");
