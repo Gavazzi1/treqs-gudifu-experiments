@@ -1,0 +1,3 @@
+- copy echo server code
+- export ts_root does not work
+- mkdir /tmp/ats/etc/trafficserver/body_factory

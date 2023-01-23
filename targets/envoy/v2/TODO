@@ -1,0 +1,3 @@
+# add "env = {}," and "env = env," to /src/envoy/bazel/envoy_binary.bzl
+# comment old-style-cast in bazel/envoy_internal.bzl
+# env BAZEL_LINKLIBS="/usr/lib/libFuzzingEngine.a -l%:libstdc++.a:-lm" BAZEL_CXXOPTS="-fsanitize=fuzzer std=gnu++0x python setup.py bdist_wheel"
